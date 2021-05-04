@@ -22,7 +22,7 @@ const CardsList = () => {
 
     const renderCards = () => {
         return cardList.map(card => {
-            return <Card card={card}/>
+            return <Card key={card.header} card={card}/>
         })
     }
 
